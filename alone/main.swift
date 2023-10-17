@@ -1042,20 +1042,23 @@ compareCards(card1: card1, card2: card2)  // 두 카드는 모두 다릅니다.
 //열거형을 사용하여 동물의 종류와 이름을 나타내는 타입을 정의하고,
 //동물의 배열을 만들어서 반복문으로 각 동물의 종류와 이름을 출력하는 함수를 작성하세요.
 
-enum Name {
-    case 바둑이, 나비, 짹짹이
-}
-
 enum Animal {
-    case dog, cat, bird
+    case dog(name: String)
+    case cat(name: String)
+    case bird(name: String)
 }
 
-struct animals {
-    var animal: Animal
-    var name: Name
-}
-
-func checkAnimal(animals: animals) {
+func checkAnimal(animals: [Animal]) { // 타입 형태 일치 시키기
+    for i in animals {
+        switch i {
+        case .dog(let name):
+            print("이 동물은 개이고 이름은 \(name)입니다.")
+        case .cat(let name):
+            print("이 동물은 고양이이고 이름은 \(name)입니다.")
+        case .bird(let name):
+            print("이 동물은 새이고 이름은 \(name)입니다.")
+        }
+    }
 }
 // 예시:
 let animals = [Animal.dog(name: "바둑이"), Animal.cat(name: "나비"), Animal.bird(name: "짹짹이")]
