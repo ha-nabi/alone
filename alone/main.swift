@@ -4,6 +4,7 @@
 //
 //  Created by 강치우 on 10/7/23.
 
+import Foundation
 
 //스터디 문제
 //func solution(_ num_list: [Int]) -> Int {
@@ -528,17 +529,17 @@ class BankAccount {
 }
 
 let account1 = BankAccount(number: 1, balance: 100.0)
-account1.displayBalance()
-account1.accountNumber
-account1.blanceLessFees
+//account1.displayBalance()
+//account1.accountNumber
+//account1.blanceLessFees
 
 
 let account2 = BankAccount(number: 2, balance: 500.0)
-account2.displayBalance()
-account2.accountNumber
+//account2.displayBalance()
+//account2.accountNumber
 
 
-BankAccount.getMaxBlance()
+//BankAccount.getMaxBlance()
 
 /*:
  # 상속 소개 p.100
@@ -583,8 +584,8 @@ class SavingsAccount: BankAccount {
 }
 
 let savings1 = SavingsAccount(number: 12311, blance: 600.00, rate: 0.07)
-savings1.calculateInterest()
-savings1.displayBalance()
+//savings1.calculateInterest()
+//savings1.displayBalance()
 
 
 
@@ -609,7 +610,7 @@ extension Double {
 }
 
 let myValue: Double = 3.0
-print( myValue.squared )
+//print( myValue.squared )
 
 
 // 상속 예제 5번
@@ -692,8 +693,8 @@ class Teacher: Person {
 // 예시
 let student: Person = Student(name: "민수", age: 15, grade: 2, classnumber: 3)
 let teacher: Person = Teacher(name: "영희", age: 25, subject: "수학")
-student.introduce() // 저는 민수이고, 15살입니다. 저는 2학년 3반입니다.
-teacher.introduce() // 저는 영희이고, 25살입니다. 저는 수학 선생님입니다.
+//student.introduce() // 저는 민수이고, 15살입니다. 저는 2학년 3반입니다.
+//teacher.introduce() // 저는 영희이고, 25살입니다. 저는 수학 선생님입니다.
 
 
 //상속 예제 07
@@ -747,8 +748,8 @@ class Rectangle: Shape {
 // 예시
 let triangle = Triangle(color: "red", base: 3, height: 4)
 let rectangle = Rectangle(color: "blue", width: 5, length: 6)
-print(triangle.area()) // 6.0
-print(rectangle.area()) // 30.0
+//print(triangle.area()) // 6.0
+//print(rectangle.area()) // 30.0
 
 
 //상속 예제 14
@@ -802,8 +803,8 @@ class Motorcycle: Vehicle {
 // 예시
 let car: Vehicle = Car(model: "소나타", color: "검정", doorNumber: 4)
 let motorcycle: Vehicle = Motorcycle(model: "니노", color: "노랑", helmet: true)
-car.drive() // 소나타 검정 자동차가 4개의 문을 열고 달립니다.
-motorcycle.drive() // 니노 노랑 오토바이가 헬멧을 쓰고 달립니다.
+//car.drive() // 소나타 검정 자동차가 4개의 문을 열고 달립니다.
+//motorcycle.drive() // 니노 노랑 오토바이가 헬멧을 쓰고 달립니다.
 
 
 //상속 예제 15
@@ -857,8 +858,8 @@ class Pasta: Food {
 // 예시:
 let cheesePizza: Food = Pizza(name: "치즈", price: 15000, topping: "치즈")
 let carbonara: Food = Pasta(name: "카르보나라", price: 12000, sauce: "크림")
-cheesePizza.order() // 치즈 피자에 치즈피자를 주문하였습니다. 가격은 15000원입니다.
-carbonara.order()   // 카르보나라 파스타에 크림 소스를 선택하였습니다. 가격은 12000원입니다.
+//cheesePizza.order() // 치즈 피자에 치즈피자를 주문하였습니다. 가격은 15000원입니다.
+//carbonara.order()   // 카르보나라 파스타에 크림 소스를 선택하였습니다. 가격은 12000원입니다.
 
 
 //상속 예제 16
@@ -974,11 +975,11 @@ func displayTempInfo(temp: Temperature) {
 }
 
 // 열거형 내의 개별 케이스에 연결된 값을 사용
-displayTempInfo(temp: Temperature.cold(centigrade: -10))
-print(Temperature.hot)
+//displayTempInfo(temp: Temperature.cold(centigrade: -10))
+//print(Temperature.hot)
 
-var temp: Temperature = .hot
-temp = .cold(centigrade: -10)
+//var temp: Temperature = .hot
+//temp = .cold(centigrade: -10)
 
 
 //// rawValue 값 지정과 사용
@@ -1028,7 +1029,7 @@ let card1 = Card(suit: .spade, rank: .ace)
 let card2 = Card(suit: .heart, rank: .king)
 
 // 카드 두 장을 비교합니다.
-compareCards(card1: card1, card2: card2)  // 두 카드는 모두 다릅니다.
+//compareCards(card1: card1, card2: card2)  // 두 카드는 모두 다릅니다.
 
 /** 비교 결과 4가지 경우
 "두 카드는 모두 같습니다."
@@ -1061,8 +1062,8 @@ func checkAnimal(animals: [Animal]) { // 타입 형태 일치 시키기
     }
 }
 // 예시:
-let animals = [Animal.dog(name: "바둑이"), Animal.cat(name: "나비"), Animal.bird(name: "짹짹이")]
-checkAnimal(animals: animals)
+//let animals = [Animal.dog(name: "바둑이"), Animal.cat(name: "나비"), Animal.bird(name: "짹짹이")]
+//checkAnimal(animals: animals)
 // 출력결과
 //이 동물은 개이고 이름은 바둑이입니다.
 //이 동물은 고양이이고 이름은 나비입니다.
