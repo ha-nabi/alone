@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+// 클로져 기본 표현식
+//let say = { print("hello") }
+//say()
